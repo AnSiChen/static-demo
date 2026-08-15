@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Static UI representation of the Book Tracker Django application.">
+<title>Explore Books | Book Tracker Demo</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+</head><body>
+<a class="demo-back-home" href="../">← Back to Portfolio</a>
+<header>
+  <div class="logo-container"><a href="home.html"><img src="assets/logo.png" alt="Book Tracker Logo" class="logo"></a></div>
+  <nav class="container"><ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="index.html" id="logout-link">Logout</a></li>
+    <li class="user-info"><a href="edit-profile.html"><strong>@bug</strong></a></li>
+  </ul></nav>
+  <div class="container search-container">
+    <form class="global-search-form" action="search.html">
+      <label for="book-search" class="hidden">Search books</label>
+      <input type="text" id="book-search" name="q" placeholder="Search books...">
+      <button type="button" onclick="location.href='explore.html'" class="button-highlight">Explore</button>
+    </form>
+    <div id="search-results"></div>
+  </div>
+</header><main><div class="explore-books-container"><h1>Explore Books</h1><div class="books-grid"><a href="book.html?id=1" class="book-card"><img src="assets/book-1.jpg" alt="1984" class="book-cover"><h3 class="book-title">1984</h3><p class="book-author">George Orwell</p></a><a href="book.html?id=2" class="book-card"><img src="assets/book-2.jpg" alt="Pride and Prejudice" class="book-cover"><h3 class="book-title">Pride and Prejudice</h3><p class="book-author">Jane Austen</p></a><a href="book.html?id=3" class="book-card"><img src="assets/book-3.jpg" alt="The Hobbit" class="book-cover"><h3 class="book-title">The Hobbit</h3><p class="book-author">J. R. R. Tolkien</p></a><a href="book.html?id=4" class="book-card"><img src="assets/book-4.jpg" alt="The Great Gatsby" class="book-cover"><h3 class="book-title">The Great Gatsby</h3><p class="book-author">F. Scott Fitzgerald</p></a><a href="book.html?id=5" class="book-card"><img src="assets/book-5.jpg" alt="Sapiens" class="book-cover"><h3 class="book-title">Sapiens</h3><p class="book-author">Yuval Noah Harari</p></a><a href="book.html?id=6" class="book-card"><img src="assets/book-6.jpg" alt="The Left Hand of Darkness" class="book-cover"><h3 class="book-title">The Left Hand of Darkness</h3><p class="book-author">Ursula K. Le Guin</p></a></div></div></main>
+<footer><div class="container"><nav><ul>
+  <li><a href="add-book.html">Add Book</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+</ul></nav>
+<p id="le-footer">&copy; 2026 Book Tracker Demo Version | by <a href="../" class="footer-a">Anthony Em | 安思辰</a></p>
+</div></footer><script src="data.js"></script><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><script src="main.js"></script></body></html>

@@ -1,0 +1,19 @@
+Original Galacticlip static assets expected here:
+profile1.png
+profile2.png
+profile3.png
+default_background.png
+galaxy_background.png
+space_background.png
+
+Optional static NASA demo media expected here:
+nasa_orion_nebula.jpg
+nasa_earth_orbit.jpg
+nasa_lunar_surface.jpg
+nasa_saturn_rings.jpg
+nasa_mars_rover.jpg
+nasa_hubble_galaxy.jpg
+nasa_spacewalk.jpg
+nasa_rocket_launch.jpg
+nasa_jupiter_clouds.jpg
+nasa_deep_space.jpg

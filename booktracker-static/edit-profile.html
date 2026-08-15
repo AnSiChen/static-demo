@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Static UI representation of the Book Tracker Django application.">
+<title>Edit Profile | Book Tracker Demo</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+</head><body>
+<header>
+  <div class="logo-container"><a href="home.html"><img src="assets/logo.png" alt="Book Tracker Logo" class="logo"></a></div>
+  <nav class="container"><ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="index.html" id="logout-link">Logout</a></li>
+    <li class="user-info"><a href="edit-profile.html"><strong>@bug</strong></a></li>
+  </ul></nav>
+  <div class="container search-container">
+    <form class="global-search-form" action="search.html">
+      <label for="book-search" class="hidden">Search books</label>
+      <input type="text" id="book-search" name="q" placeholder="Search books...">
+      <button type="button" onclick="location.href='explore.html'" class="button-highlight">Explore</button>
+    </form>
+    <div id="search-results"></div>
+  </div>
+</header><main><div class="edit-profile-container"><h2 class="form-heading">Edit Profile</h2><form class="edit-profile-form static-edit-profile-form"><p><label for="edit-bio">Bio:</label><textarea id="edit-bio">Curious reader keeping a small record of books and notes.</textarea></p><p><label for="edit-location">Location:</label><input id="edit-location" type="text" value="Adelaide"></p><p><label for="edit-birth">Birth date:</label><input id="edit-birth" class="static-field" type="date" value="1994-08-18"></p><p><label for="edit-photo">Profile photo:</label><input id="edit-photo" class="static-field" type="file" disabled><span class="form-help">Disabled in the static representation.</span></p><button type="submit" class="btn btn-primary">Save changes</button></form></div></main>
+<footer><div class="container"><nav><ul>
+  <li><a href="add-book.html">Add Book</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+</ul></nav>
+<p id="le-footer">&copy; 2026 Book Tracker Demo Version | by <a href="../" class="footer-a">Anthony Em | 安思辰</a></p>
+</div></footer><script src="data.js"></script><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><script src="main.js"></script></body></html>

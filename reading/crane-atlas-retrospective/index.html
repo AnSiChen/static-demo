@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version</title>
+    <meta name="description" content="A retrospective on building Crane Atlas from a private learning-journal idea into a full Flask application, and why the hosted version was ultimately retired while the core concept survived.">
+    <meta name="author" content="Anthony Em">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../static/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../static/images/favicon/favicon-16x16.png">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66565d92a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/responsive.css">
+    <link rel="stylesheet" href="../../static/css/article.css">
+<link rel="stylesheet" href="../../static/css/article-responsive.css">
+</head>
+<body data-site-root="../../">
+<header class="base-header">
+    <a class="logo" href="../../">Anthony Em</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="base-nav">
+        <a href="../../">Home</a>
+        <a href="../../reading/">Reading</a>
+        <a href="../../rss.xml" title="RSS Feed"><i class="fa-solid fa-rss"></i></a>
+        <button id="ambient-toggle" class="nav-icon-btn" aria-label="Toggle ambient sound">🍃</button>
+    </nav>
+</header>
+<main>
+<div class="articles-content">
+    <article>
+        <div class="hero"></div>
+        <header class="article-header">
+            <h1>Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version</h1>
+            <img src="../../static/images/articles/crane-atlas.png" alt="Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version" class="featured-image">
+            <div class="article-meta"><span>Anthony Em</span><span>15 August 2026</span></div>
+        </header>
+        <div class="article-body"><p>Crane Atlas began as a small idea: a private place where learning could leave a history.</p>
+<p>I wanted somewhere to keep the moments around learning rather than only the result. A useful note, a photograph of a workbook, a milestone, a difficult week, a resource worth keeping, or something another trusted person wanted to remember with you. Mandarin was the first real Journey, but it was never meant to define the product. But then the idea grew into a much larger Flask application</p>
+
+<p>The final hosted version had accounts called Birds, private shared spaces called Nests, chronological Journeys, preserved Memories, a shared Notebook, curated Nest Pins, and lightweight Reviews for material worth revisiting.</p>
+
+<div class="article-image">
+    <img src="../../static/images/articles/memories.png" alt="Crane Atlas Memories">
+   <p class="image-caption">Memories</p>
+</div>
+
+<p>The application also accumulated the infrastructure expected of a real hosted service: SQLite persistence, image handling, authentication, email verification, password recovery, abuse protection, account recovery, Docker deployment, reverse proxy configuration, transactional email, and a growing automated test suite (168... I was even testing HTML templates, better safe than sorry.) It was all helpful though, as it forced product ideas to survive contact with architecture.</p></p>
+<p>Some concepts became stronger as they were implemented while others were removed. For instance, the Notebook became intentionally different from Memories. Nests stopped resembling classrooms and became small private spaces without ranks. Review tools stayed secondary instead of turning the application into a flashcard product. The Journey remained chronological because the history itself was the point.</p>
+
+<div class="article-image">
+    <img src="../../static/images/articles/nest.png" alt="Crane Atlas Nest">
+   <p class="image-caption">Nest</p>
+</div>
+
+<p>A principle that helped me reject a lot of features that would have made the project busier without making it better was "preserve meaningful history rather than every application action." A Nest did not need a social feed. Birds did not need scores. Supporting another person did not require a teacher role. Review activity did not need to be public. Topics could organize material without becoming a rigid hierarchy.</p>
+
+<p>By the time the application was approaching a public launch, the project had also become a real production service to operate.</p>
+<p>That meant mail delivery, server administration, public abuse protection, DNS, certificates, deployment pipelines, account recovery, legal pages, and infrastructure subscriptions. None of those things were mistakes; building them taught me a great deal. But maintaining them had become a separate commitment from the part of Crane Atlas I actually wanted to keep.</p>
+
+<div class="article-image">
+    <img src="../../static/images/articles/reviews.png" alt="Crane Atlas Reviews">
+   <p class="image-caption">Reviews</p>
+</div>
+
+<p>So I retired the large hosted version before turning it into another permanent service obligation.</p>
+<p>The repository remains the complete engineering artifact. A static UI representation remains available as a demonstration of the finished product. The infrastructure around it does not need to remain online forever for the work to count.</p>
+
+<p>The interesting part is that Crane Atlas did not disappear. A much smaller private version did survive for the handful of people it was originally closest to serving, and best of all, that version can remain tiny. It does not need public registration, transactional email, a launch funnel, or the operational surface area of a public web service.</p>
+
+<p>The large version taught me what the product could become, and the smaller one clarified what actually needed to remain. Quite honestly, a very clear ending and closing chapter.</p>
+
+<p>Product-wise Technically, Crane Atlas gave me sustained practice with Flask application architecture, SQLite ownership rules, authentication flows, image handling, email systems, rate limiting, Docker deployment, testing, and iterative schema design. Product-wise, it kept on reminding me something more useful: implementation is a form of editing. Building a feature is often the fastest way to discover that it should be smaller, simpler, moved somewhere else, or removed entirely.</p>
+
+
+
+<p>Crane Atlas changed repeatedly because I let the real application argue with the original idea.</p>
+<p>That was the project.</p>
+</div>
+        <a href="../" class="back-link">← Back to Reading</a>
+    </article>
+    <section class="continue-reading"><h2>Continue Reading</h2><div class="article-grid"><a href="../homelabs-devops/" class="more-card">
+            <img src="../../static/images/articles/htop.png" alt="Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu">
+            <h3>Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu</h3>
+            <p>A self-hosted deployment platform for hosting and maintaining multiple containerized applications on a Linux VPS using Docker, Docker Compose, GitHub Actions, SSH, and a reverse proxy with automated HTTPS.</p>
+        </a></div></section>
+</div>
+</main>
+<footer class="base-footer">
+    <nav>
+        <a href="../../">Home</a>
+        <a href="../../reading/">Reading</a>
+        <a class="email-link"></a>
+        <a href="../../rss.xml"><i class="fa-solid fa-rss"></i></a>
+    </nav>
+    <p>&copy; 2026 Anthony Em</p>
+</footer>
+<div class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-sort-up"></i></div>
+<script src="../../static/js/main.js"></script>
+<script src="../../static/js/theme.js"></script>
+<script>const AMBIENT_AUDIO = "../../static/audio/forest-wind.mp3";</script>
+<script src="../../static/js/hero-audio.js"></script>
+</body></html>

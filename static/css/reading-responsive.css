@@ -1,0 +1,218 @@
+/* Reading */
+
+@media (max-width:768px){
+
+    .hero{
+
+        min-height:auto;
+        padding-top:7rem;
+        padding-bottom:3rem;
+
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1100px){
+
+    .featured-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .featured-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1100px){
+
+    .latest-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .latest-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .rss-card{
+
+        padding:1.5rem;
+
+    }
+
+    .rss-content{
+
+        display:flex;
+        flex-direction:column;
+        gap:1rem;
+
+        text-align:center;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .rss-button{
+
+        width:100%;
+        justify-content:center;
+
+    }
+
+}
+
+.featured-image,
+.reading-image{
+
+    width:100%;
+    height:auto;
+    display:block;
+
+}
+
+.featured-title,
+.reading-title{
+
+    overflow-wrap:anywhere;
+
+}
+
+.reading-meta{
+
+    font-size:.9rem;
+
+}
+
+@media (max-width:768px){
+
+    .section-title{
+
+        font-size:clamp(2rem,8vw,3rem);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .featured-content,
+    .reading-content{
+
+        padding:1.25rem;
+
+    }
+
+}
+
+
+/* ============================================
+   Rabbit Hole (latest-reading) - Mobile
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    .reading-card {
+        grid-template-columns: 1fr !important; 
+        gap: 1rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .reading-image {
+        width: 100% !important;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .reading-content {
+        padding: 0 !important;
+    }
+}
+
+/* ============================================
+   Featured Cards - Premium Glass (White)
+   ============================================ */
+
+@media (max-width: 768px) {
+    .featured-card {
+        background: rgba(255, 255, 255, 0.12) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        border-radius: 0.75rem !important;
+        overflow: hidden !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .featured-content {
+        background: rgba(255, 255, 255, 0.08) !important;
+        backdrop-filter: blur(4px) !important;
+        -webkit-backdrop-filter: blur(4px) !important;
+        padding: 1.5rem !important;
+
+        border-radius: 0 0 0.75rem 0.75rem !important;
+    }
+
+
+    .featured-content .featured-link {
+        opacity: 0.85;
+    }
+    .featured-content .featured-link:hover {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 769px) {
+    .featured-card {
+        background: rgba(255, 255, 255, 0.08) !important;
+        backdrop-filter: blur(4px) !important;
+        -webkit-backdrop-filter: blur(4px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .featured-content {
+        background: rgba(255, 255, 255, 0.05) !important;
+        backdrop-filter: blur(2px) !important;
+        -webkit-backdrop-filter: blur(2px) !important;
+    
+    }
+}
+
+/* ---- Standardize margins ---- */
+@media (max-width: 768px) {
+    .content-width {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 769px) {
+    .content-width {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+        box-sizing: border-box;
+    }
+}

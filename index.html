@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Em</title>
+    <meta name="description" content="Software Engineer, writer and learner.">
+    <meta name="author" content="Anthony Em">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66565d92a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <link rel="stylesheet" href="static/css/home.css">
+<link rel="stylesheet" href="static/css/home-responsive.css">
+</head>
+<body data-site-root="./">
+<header class="base-header">
+    <a class="logo" href="">Anthony Em</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="base-nav">
+        <a href="">Home</a>
+        <a href="reading/">Reading</a>
+        <a href="rss.xml" title="RSS Feed"><i class="fa-solid fa-rss"></i></a>
+    </nav>
+</header>
+<main>
+<section class="hero">
+    <canvas id="leaves-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="intro-overlay">
+        <div class="intro-text">
+            <span class="intro-line line-one">Simplicity.</span>
+            <span class="intro-line line-two">Functionality.</span>
+        </div>
+    </div>
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-tagline"><p>Curious</p></div>
+            <div class="hero-description"><h1 class="hero-heading"><span class="hero-heading-text">I build, write, and explore.</span></h1></div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">Projects</a>
+                <a href="reading/" class="btn btn-secondary">Reading</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-container">
+    <section id="projects" class="projects">
+        <h2>Engineering Projects</h2>
+        <p class="section-description">Software, web, and infrastructure projects.</p>
+        <div class="projects-grid"><article class="project-card">
+    <img class="project-image" src="static/images/projects/crane-atlas-anthonyem.png" alt="Crane Atlas screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Crane Atlas</h3>
+        <p class="project-description">A private place for preserving learning journeys, shared history, lightweight review material, and trusted collaboration inside small Nests.</p>
+        <ul class="project-tech"><li>Python</li><li>Flask</li><li>SQLite</li><li>Jinja</li><li>JavaScript</li><li>Docker</li></ul>
+        <div class="project-actions"><a href="crane-atlas-static/">Demo</a><a href="reading/crane-atlas-retrospective/">Further Reading</a></div>
+    </div>
+</article><article class="project-card">
+    <img class="project-image" src="static/images/projects/galacticlip-anthonyem.png" alt="Galacticlip NASA API Mobile App screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Galacticlip NASA API Mobile App</h3>
+        <p class="project-description">A cross-platform .NET MAUI application that integrates NASA&#x27;s API, allowing users to search, bookmark, and explore space media through a modern MVVM architecture.</p>
+        <ul class="project-tech"><li>C#</li><li>.NET MAUI</li><li>MVVM</li><li>NASA API</li><li>XAML</li><li>Figma</li></ul>
+        <div class="project-actions"><a href="https://github.com/AnSiChen/gallacticlip" target="_blank" rel="noopener noreferrer">GitHub</a><a href="galacticlip-static/">Demo</a></div>
+    </div>
+</article><article class="project-card">
+    <img class="project-image" src="static/images/projects/anthony_em-book-tracker-demo.png" alt="Book Tracking and Management screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Book Tracking and Management</h3>
+        <p class="project-description">A Django application for tracking books, notes, reviews and reading progress.</p>
+        <ul class="project-tech"><li>Django</li><li>JavaScript</li><li>SQLite</li><li>REST API</li><li>AJAX</li></ul>
+        <div class="project-actions"><a href="https://github.com/AnSiChen/library_demo" target="_blank" rel="noopener noreferrer">GitHub</a><a href="booktracker-static/">Demo</a></div>
+    </div>
+</article><article class="project-card">
+    <img class="project-image" src="static/images/projects/anthonyem_com-rss-aggregator.png" alt="Reading Aggregator screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Reading Aggregator</h3>
+        <p class="project-description">A framework-independent Python engine that pulls articles from curated RSS feeds and normalizes multiple publication formats into a common reading model.</p>
+        <ul class="project-tech"><li>Python</li><li>RSS</li><li>Feedparser</li><li>BeautifulSoup</li><li>Dataclasses</li></ul>
+        <div class="project-actions"><a href="https://github.com/AnSiChen/rss-feed-aggregator" target="_blank" rel="noopener noreferrer">GitHub</a><a href="reading/">Demo</a></div>
+    </div>
+</article><article class="project-card">
+    <img class="project-image" src="static/images/projects/anthony_em-self-hosted-infrastructure.png" alt="Self-Hosted Deployment Platform screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Self-Hosted Deployment Platform</h3>
+        <p class="project-description">The Linux-based infrastructure that powered my portfolio projects, using Docker, Docker Compose, GitHub Actions, and Nginx to automate deployments and host multiple applications.</p>
+        <ul class="project-tech"><li>Linux</li><li>SSH</li><li>DNS</li><li>Docker</li><li>Docker Compose</li><li>GitHub Actions</li><li>Nginx</li></ul>
+        <div class="project-actions"><a href="https://github.com/AnSiChen/homelab-devops" target="_blank" rel="noopener noreferrer">GitHub</a><a href="reading/homelabs-devops/">Further Reading</a></div>
+    </div>
+</article><article class="project-card">
+    <img class="project-image" src="static/images/projects/tailwindcss.jpg" alt="Tailwind Portfolio Website screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Tailwind Portfolio Website</h3>
+        <p class="project-description">A responsive portfolio website built with Tailwind CSS, focusing on clean UI design, reusable components, accessibility, and modern frontend development practices.</p>
+        <ul class="project-tech"><li>HTML5</li><li>Tailwind CSS</li><li>JavaScript</li><li>Responsive Design</li><li>UI/UX</li><li>GitHub</li></ul>
+        <div class="project-actions"><a href="https://github.com/AnSiChen/web-dev-project-aem" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://ansichen.github.io/web-dev-project-aem/">Demo</a></div>
+    </div>
+</article><article class="project-card">
+    <img class="project-image" src="static/images/projects/anthony_em-automated-database-populator.png" alt="Automated Database Populator screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Automated Database Populator</h3>
+        <p class="project-description">A Python utility that generates realistic books, users, genres and images for Django applications, making development and testing faster and more consistent.</p>
+        <ul class="project-tech"><li>Python</li><li>Django</li><li>Faker</li><li>Pillow</li><li>ImgKit</li><li>pytest</li></ul>
+        <div class="project-actions"><a href="https://github.com/AnSiChen/python_db_populator" target="_blank" rel="noopener noreferrer">GitHub</a><a href="booktracker-static/explore.html">Demo</a></div>
+    </div>
+</article><article class="project-card">
+    <img class="project-image" src="static/images/projects/sightseeing-map.jpg" alt="Local Sightseeing Map screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Local Sightseeing Map</h3>
+        <p class="project-description">A collaborative web application that helps users discover nearby attractions using GPS, interactive maps, and category-based filtering. My contributions focused on backend, infrastructure, and DevOps.</p>
+        <ul class="project-tech"><li>Django</li><li>React</li><li>PostgreSQL</li><li>Leaflet</li><li>Geopy</li><li>Django REST Framework</li><li>GitHub</li></ul>
+        <div class="project-actions"><a href="https://github.com/AnSiChen/sightseeing-map" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </div>
+</article><article class="project-card">
+    <img class="project-image" src="static/images/projects/pyceas.png" alt="Pyceas Open Source Contribution screenshot">
+    <div class="project-content">
+        <h3 class="project-title">Pyceas Open Source Contribution</h3>
+        <p class="project-description">Contributed an inventory system to the open-source Pyceas project, implementing item management features and collaborating on gameplay and GUI improvements.</p>
+        <ul class="project-tech"><li>Python</li><li>Pygame</li><li>Ruff</li><li>Mypy</li><li>GitHub</li><li>Agile Development</li></ul>
+        <div class="project-actions"><a href="https://github.com/PyCeas/Pyceas" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://github.com/PyCeas/Pyceas/pull/52" target="_blank" rel="noopener noreferrer">Pull Request</a></div>
+    </div>
+</article></div>
+    </section>
+    <section class="featured-reading">
+        <div class="section-container">
+            <header class="section-header">
+                <h2 class="section-title">Featured Reading</h2>
+                <p class="section-description">By Anthony Em and a small static shelf of curious reads.</p>
+            </header>
+            <div id="featured-grid" class="featured-grid"></div>
+        </div>
+    </section>
+</section>
+</main>
+<footer class="base-footer">
+    <nav>
+        <a href="">Home</a>
+        <a href="reading/">Reading</a>
+        <a class="email-link"></a>
+        <a href="rss.xml"><i class="fa-solid fa-rss"></i></a>
+    </nav>
+    <p>&copy; 2026 Anthony Em</p>
+</footer>
+<div class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-sort-up"></i></div>
+<script src="static/js/main.js"></script>
+<script src="static/js/theme.js"></script>
+<script src="reading/data.js"></script>
+<script src="static/js/static-reading-render.js"></script>
+<script src="static/js/hero-leaves.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="static/js/hero-intro.js"></script>
+</body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Static UI representation of the Book Tracker Django application.">
+<title>Dashboard | Book Tracker Demo</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+</head><body>
+<header>
+  <div class="logo-container"><a href="home.html"><img src="assets/logo.png" alt="Book Tracker Logo" class="logo"></a></div>
+  <nav class="container"><ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="index.html" id="logout-link">Logout</a></li>
+    <li class="user-info"><a href="edit-profile.html"><strong>@bug</strong></a></li>
+  </ul></nav>
+  <div class="container search-container">
+    <form class="global-search-form" action="search.html">
+      <label for="book-search" class="hidden">Search books</label>
+      <input type="text" id="book-search" name="q" placeholder="Search books...">
+      <button type="button" onclick="location.href='explore.html'" class="button-highlight">Explore</button>
+    </form>
+    <div id="search-results"></div>
+  </div>
+</header><main><div class="dashboard-container"><div class="dashboard-grid"><div class="user-profile my-profile"><div class="profile-photo profile-placeholder">BUG</div><h3>My Dashboard</h3><p class="bio"><strong>Bio:</strong> Curious reader keeping a small record of books and notes.</p><p class="location"><strong>Location:</strong> Adelaide</p><p class="birthdate"><strong>Birth Date:</strong> 1994-08-18</p><div class="book-links"><a href="books.html" class="btn btn-primary">My Books</a><a href="add-book.html" class="btn btn-secondary">New Book</a><a href="edit-profile.html" class="btn btn-primary">Edit Profile</a></div></div>
+<div class="profiles-container"><div class="profile-card"><div class="profile-photo profile-placeholder">AV</div><h4>Avery</h4><p class="bio"><strong>Bio:</strong> Reading history and contemporary fiction.</p><p class="location"><strong>Location:</strong> Melbourne</p><p class="birthdate"><strong>Birth Date:</strong> 1993-03-14</p><a href="profile.html?user=avery" class="btn btn-danger">View Profile</a></div><div class="profile-card"><div class="profile-photo profile-placeholder">MK</div><h4>Mika</h4><p class="bio"><strong>Bio:</strong> Design, essays and speculative fiction.</p><p class="location"><strong>Location:</strong> Tokyo</p><p class="birthdate"><strong>Birth Date:</strong> 1997-11-02</p><a href="profile.html?user=mika" class="btn btn-danger">View Profile</a></div><div class="profile-card"><div class="profile-photo profile-placeholder">JL</div><h4>Julian</h4><p class="bio"><strong>Bio:</strong> Mostly history, biographies and classics.</p><p class="location"><strong>Location:</strong> London</p><p class="birthdate"><strong>Birth Date:</strong> 1991-06-24</p><a href="profile.html?user=julian" class="btn btn-danger">View Profile</a></div></div>
+<div class="quick-notes-section"><h3>Quick Notes</h3><form id="quick-notes-form"><p><label for="quick-note">Note:</label><textarea id="quick-note" name="note" placeholder="Write a quick note..."></textarea></p><button type="submit">Add Note</button></form><div class="quick-notes-list" id="quick-notes-list"><div class="quick-note"><p>Look up the essays mentioned in chapter four.</p><span class="timestamp">Today, 09:40</span></div><div class="quick-note"><p>Finish 1984 before the weekend.</p><span class="timestamp">Yesterday, 20:12</span></div></div></div>
+<div class="continue-reading"><h3>Books You Are Currently Reading...</h3><div class="in-progress-books"><a href="book.html?id=1" class="in-progress-book-card"><img src="assets/book-1.jpg" alt="1984" class="book-cover-reading"></a><a href="book.html?id=3" class="in-progress-book-card"><img src="assets/book-3.jpg" alt="The Hobbit" class="book-cover-reading"></a><a href="book.html?id=6" class="in-progress-book-card"><img src="assets/book-6.jpg" alt="The Left Hand of Darkness" class="book-cover-reading"></a></div></div></div></div></main>
+<footer><div class="container"><nav><ul>
+  <li><a href="add-book.html">Add Book</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+</ul></nav>
+<p id="le-footer">&copy; 2026 Book Tracker Demo Version | by <a href="../" class="footer-a">Anthony Em | 安思辰</a></p>
+</div></footer><script src="data.js"></script><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><script src="main.js"></script></body></html>

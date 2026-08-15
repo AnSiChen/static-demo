@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Anthony Em</title>
+  <link>https://anthonyem.com/</link>
+  <description>Writing by Anthony Em.</description>
+  <language>en</language>
+  <item>
+    <title>Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version</title>
+    <link>https://anthonyem.com/reading/crane-atlas-retrospective/</link>
+    <guid>https://anthonyem.com/reading/crane-atlas-retrospective/</guid>
+    <pubDate>Sat, 15 Aug 2026 00:00:00 +0930</pubDate>
+    <description>A retrospective on building Crane Atlas from a private learning-journal idea into a full Flask application, and why the hosted version was ultimately retired while the core concept survived.</description>
+  </item>
+  <item>
+    <title>Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu</title>
+    <link>https://anthonyem.com/reading/homelabs-devops/</link>
+    <guid>https://anthonyem.com/reading/homelabs-devops/</guid>
+    <pubDate>Fri, 16 May 2025 00:00:00 +0930</pubDate>
+    <description>A self-hosted deployment platform for hosting and maintaining multiple containerized applications on a Linux VPS using Docker, Docker Compose, GitHub Actions, SSH, and a reverse proxy with automated HTTPS.</description>
+  </item>
+</channel>
+</rss>

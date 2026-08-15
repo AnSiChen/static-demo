@@ -1,0 +1,80 @@
+window.BOOKS = [
+  {
+    "id": 1,
+    "title": "1984",
+    "author": "George Orwell",
+    "isbn": "9780451524935",
+    "date": "1949-06-08",
+    "pages": 328,
+    "genres": "Dystopian, Political Fiction",
+    "summary": "A dystopian novel about surveillance, truth, and individual freedom under an authoritarian state.",
+    "progress": 68,
+    "status": "In Progress",
+    "cover": "assets/book-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "isbn": "9780141439518",
+    "date": "1813-01-28",
+    "pages": 480,
+    "genres": "Classic, Romance",
+    "summary": "A classic novel of manners, family, class, and the evolving relationship between Elizabeth Bennet and Mr Darcy.",
+    "progress": 100,
+    "status": "Completed",
+    "cover": "assets/book-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "The Hobbit",
+    "author": "J. R. R. Tolkien",
+    "isbn": "9780547928227",
+    "date": "1937-09-21",
+    "pages": 300,
+    "genres": "Fantasy, Adventure",
+    "summary": "Bilbo Baggins leaves the comfort of home for an unexpected journey involving dwarves, treasure, and a dragon.",
+    "progress": 35,
+    "status": "In Progress",
+    "cover": "assets/book-3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565",
+    "date": "1925-04-10",
+    "pages": 180,
+    "genres": "Classic, Literary Fiction",
+    "summary": "A portrait of ambition, longing, and excess in Jazz Age America.",
+    "progress": 0,
+    "status": "Not Started",
+    "cover": "assets/book-4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "isbn": "9780062316097",
+    "date": "2015-02-10",
+    "pages": 464,
+    "genres": "History, Anthropology",
+    "summary": "A broad history of humankind, examining the ideas and systems that shaped modern societies.",
+    "progress": 100,
+    "status": "Completed",
+    "cover": "assets/book-5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "isbn": "9780441478125",
+    "date": "1969-03-01",
+    "pages": 304,
+    "genres": "Science Fiction",
+    "summary": "An envoy travels to a distant world in a landmark exploration of society, identity, politics, and loyalty.",
+    "progress": 12,
+    "status": "In Progress",
+    "cover": "assets/book-6.jpg"
+  }
+];

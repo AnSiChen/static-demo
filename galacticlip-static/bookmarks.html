@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Galacticlip — Static Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-shell">
+    <div>
+      <p class="demo-meta"><strong>Galacticlip static UI demo.</strong> A browser representation of the original .NET MAUI application. NASA media imagery shown in this demo is sourced from NASA.</p>
+      <section class="phone" aria-label="Galacticlip mobile application demo">
+        <div class="status-bar"><span>9:41</span><span class="status-icons"><i class="status-dot"></i><i class="status-dot"></i><i class="status-dot"></i><i class="status-battery"></i></span></div>
+        <div class="app">
+          <main class="app-content">
+            <section class="bookmarks-page">
+              <input class="search-input" data-bookmark-search type="search" placeholder="Search bookmarks..." aria-label="Search bookmarks">
+              <div class="bookmark-list" data-bookmark-list></div>
+            </section>
+          </main>
+<nav class="tab-bar" aria-label="Galacticlip tabs">
+  <a class="tab " href="index.html"><img src="assets/icons/home_icon.png" alt=""><span>Home</span></a>
+  <a class="tab " href="search.html"><img src="assets/icons/search_icon.png" alt=""><span>Search</span></a>
+  <a class="tab active" href="bookmarks.html"><img src="assets/icons/bookmarks_icon.png" alt=""><span>Bookmarks</span></a>
+  <a class="tab " href="settings.html"><img src="assets/icons/settings_icon.png" alt=""><span>Settings</span></a>
+</nav>
+          <div class="toast" role="status" aria-live="polite"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

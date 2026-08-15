@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading</title>
+    <meta name="description" content="Essays, tutorials and thoughts on software development, technology, science and life.">
+    <meta name="author" content="Anthony Em">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon/favicon-16x16.png">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66565d92a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="stylesheet" href="../static/css/reading.css">
+<link rel="stylesheet" href="../static/css/reading-responsive.css">
+</head>
+<body data-site-root="../">
+<header class="base-header">
+    <a class="logo" href="../">Anthony Em</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="base-nav">
+        <a href="../">Home</a>
+        <a href="../reading/">Reading</a>
+        <a href="../rss.xml" title="RSS Feed"><i class="fa-solid fa-rss"></i></a>
+        <button id="ambient-toggle" class="nav-icon-btn" aria-label="Toggle ambient sound">🍃</button>
+    </nav>
+</header>
+<main>
+<div class="main">
+    <section class="hero">
+        <div class="hero-background"></div>
+        <section class="featured-reading content-width">
+            <div class="section-container"><div id="featured-grid" class="featured-grid"></div></div>
+        </section>
+        <div class="content-width">
+            <div class="rss-card">
+                <div class="rss-content">
+                    <h2 class="rss-title">Enjoy reading?</h2>
+                    <p class="rss-description">
+                        <a href="../rss.xml" class="btn btn-primary rss-button"><i class="fa-solid fa-rss"></i> Subscribe</a>
+                        using your favourite RSS reader and never miss a new post.
+                        Skip the newsletter. Follow this site without emails, algorithms, or social media.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-container">
+        <section class="latest-reading">
+            <h2 class="section-title">The Rabbit Hole</h2>
+            <p class="section-description">Original pieces and a permanent shelf of curious reads.</p>
+            <div class="section-container"><div id="latest-grid" class="latest-grid"></div></div>
+        </section>
+    </section>
+</div>
+</main>
+<footer class="base-footer">
+    <nav>
+        <a href="../">Home</a>
+        <a href="../reading/">Reading</a>
+        <a class="email-link"></a>
+        <a href="../rss.xml"><i class="fa-solid fa-rss"></i></a>
+    </nav>
+    <p>&copy; 2026 Anthony Em</p>
+</footer>
+<div class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-sort-up"></i></div>
+<script src="../static/js/main.js"></script>
+<script src="../static/js/theme.js"></script>
+<script>const AMBIENT_AUDIO = "../static/audio/forest-wind.mp3";</script>
+<script src="../static/js/hero-audio.js"></script>
+<script src="data.js"></script>
+<script src="../static/js/static-reading-render.js"></script>
+<script>
+const heroImages = [
+    "../static/images/articles/crane-atlas-retirement.png",
+    "../static/images/articles/htop.png",
+    "../static/images/del_hero_reading.png"
+];
+</script>
+<script src="../static/js/reading.js"></script>
+</body></html>

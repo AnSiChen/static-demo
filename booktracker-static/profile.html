@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Static UI representation of the Book Tracker Django application.">
+<title>Reader Profile | Book Tracker Demo</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+</head><body>
+<header>
+  <div class="logo-container"><a href="home.html"><img src="assets/logo.png" alt="Book Tracker Logo" class="logo"></a></div>
+  <nav class="container"><ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="index.html" id="logout-link">Logout</a></li>
+    <li class="user-info"><a href="edit-profile.html"><strong>@bug</strong></a></li>
+  </ul></nav>
+  <div class="container search-container">
+    <form class="global-search-form" action="search.html">
+      <label for="book-search" class="hidden">Search books</label>
+      <input type="text" id="book-search" name="q" placeholder="Search books...">
+      <button type="button" onclick="location.href='explore.html'" class="button-highlight">Explore</button>
+    </form>
+    <div id="search-results"></div>
+  </div>
+</header><main><div class="profile-container"><h2 id="profile-name">Avery's Profile</h2><div class="profile-card-profile"><div class="profile-photo-profile profile-placeholder">AV</div><div class="profile-info"><p><strong>Bio:</strong> Reading history and contemporary fiction.</p><p><strong>Location:</strong> Melbourne</p><p><strong>Birth Date:</strong> 1993-03-14</p></div></div><h3 id="profile-books-heading">Avery's Books</h3><div class="book-list-profile"><div class="book-entry-profile"><img src="assets/book-2.jpg" alt="Cover image for Pride and Prejudice" class="book-cover"><h4>Pride and Prejudice</h4><p>by Jane Austen</p><button class="btn btn-primary static-add-list">Add to My List</button></div><div class="book-entry-profile"><img src="assets/book-3.jpg" alt="Cover image for The Hobbit" class="book-cover"><h4>The Hobbit</h4><p>by J. R. R. Tolkien</p><button class="btn btn-primary static-add-list">Add to My List</button></div><div class="book-entry-profile"><img src="assets/book-4.jpg" alt="Cover image for The Great Gatsby" class="book-cover"><h4>The Great Gatsby</h4><p>by F. Scott Fitzgerald</p><button class="btn btn-primary static-add-list">Add to My List</button></div></div></div></main>
+<footer><div class="container"><nav><ul>
+  <li><a href="add-book.html">Add Book</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+</ul></nav>
+<p id="le-footer">&copy; 2026 Book Tracker Demo Version | by <a href="../" class="footer-a">Anthony Em | 安思辰</a></p>
+</div></footer><script src="data.js"></script><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><script src="main.js"></script></body></html>

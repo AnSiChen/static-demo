@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Static UI representation of the Book Tracker Django application.">
+<title>Add Book | Book Tracker Demo</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+</head><body>
+<header>
+  <div class="logo-container"><a href="home.html"><img src="assets/logo.png" alt="Book Tracker Logo" class="logo"></a></div>
+  <nav class="container"><ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="index.html" id="logout-link">Logout</a></li>
+    <li class="user-info"><a href="edit-profile.html"><strong>@bug</strong></a></li>
+  </ul></nav>
+  <div class="container search-container">
+    <form class="global-search-form" action="search.html">
+      <label for="book-search" class="hidden">Search books</label>
+      <input type="text" id="book-search" name="q" placeholder="Search books...">
+      <button type="button" onclick="location.href='explore.html'" class="button-highlight">Explore</button>
+    </form>
+    <div id="search-results"></div>
+  </div>
+</header><main><div class="add-book-container"><h2 class="form-heading">Add Book</h2><form class="fetch-book-form" id="fetch-book-form"><label for="isbn">ISBN:</label><input type="text" id="isbn" name="isbn" class="isbn-input" value="9780451524935" placeholder="Enter an ISBN and click 'Fetch' to retrieve book details. Note: Some books may be unavailable or incomplete."><input type="submit" class="btn btn-secondary" value="Fetch"></form><img id="fetched-cover" src="" alt="Cover Image" class="cover-image" style="display:none"><div id="fetch-message"></div>
+<form class="book-details-form static-add-book-form"><p><label for="add-title">Title:</label><input id="add-title" name="title"></p><p><label for="add-author">Author:</label><input id="add-author" name="author"></p><p><label for="add-isbn">ISBN:</label><input id="add-isbn" name="book_isbn"></p><p><label for="add-pages">Pages:</label><input id="add-pages" class="static-field" type="number" name="pages"></p><p><label>Genres:</label></p><div class="static-checkboxes"><label><input type="checkbox" name="genres" value="Classic">Classic</label><label><input type="checkbox" name="genres" value="Fiction">Fiction</label><label><input type="checkbox" name="genres" value="History">History</label><label><input type="checkbox" name="genres" value="Science Fiction">Science Fiction</label></div><p><label for="add-date">Publication date:</label><input id="add-date" class="static-field" type="date" name="publication_date"></p><p><label for="add-cover">Cover image:</label><input id="add-cover" class="static-field" type="file" disabled><span class="form-help">Disabled in the static representation.</span></p><p><label for="add-summary">Summary:</label><textarea id="add-summary" name="summary"></textarea></p><button type="submit" class="btn btn-primary">Add Book</button></form></div></main>
+<footer><div class="container"><nav><ul>
+  <li><a href="add-book.html">Add Book</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+</ul></nav>
+<p id="le-footer">&copy; 2026 Book Tracker Demo Version | by <a href="../" class="footer-a">Anthony Em | 安思辰</a></p>
+</div></footer><script src="data.js"></script><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><script src="main.js"></script></body></html>

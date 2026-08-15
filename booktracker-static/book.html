@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Static UI representation of the Book Tracker Django application.">
+<title>Book Details | Book Tracker Demo</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+</head><body>
+<header>
+  <div class="logo-container"><a href="home.html"><img src="assets/logo.png" alt="Book Tracker Logo" class="logo"></a></div>
+  <nav class="container"><ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="index.html" id="logout-link">Logout</a></li>
+    <li class="user-info"><a href="edit-profile.html"><strong>@bug</strong></a></li>
+  </ul></nav>
+  <div class="container search-container">
+    <form class="global-search-form" action="search.html">
+      <label for="book-search" class="hidden">Search books</label>
+      <input type="text" id="book-search" name="q" placeholder="Search books...">
+      <button type="button" onclick="location.href='explore.html'" class="button-highlight">Explore</button>
+    </form>
+    <div id="search-results"></div>
+  </div>
+</header><main><div class="book-detail-container" id="book-detail-page"><h2 class="form-heading">Book Details</h2><div class="book-info"><img id="detail-cover" src="" alt="Book cover" class="book-cover"><h3 class="book-title" id="detail-title"></h3><p class="book-author"><strong>Author:</strong> <span id="detail-author"></span></p><p class="book-isbn"><strong>ISBN:</strong> <span id="detail-isbn"></span></p><p class="book-publication-date"><strong>Publication Date:</strong> <span id="detail-date"></span></p><p class="book-pages"><strong>Pages:</strong> <span id="detail-pages"></span></p><p class="book-genres"><strong>Genres:</strong> <span id="detail-genres"></span></p><p class="book-summary"><strong>Summary:</strong> <span id="detail-summary"></span></p><p class="book-read-status"><strong>Read:</strong> <span id="detail-read"></span></p><div class="action-buttons"><a id="share-card-link" href="shareable-book-card.html" class="btn btn-secondary">Generate Shareable Card</a><a id="edit-book-link" href="edit-book.html" class="btn btn-primary">Edit</a><a id="remove-book-link" href="remove-book.html" class="btn btn-danger">Remove</a></div></div>
+<h3 class="reviews-heading">Reviews</h3><div class="reviews" id="reviews"><div class="review"><p><strong>avery:</strong> A book I kept thinking about long after I finished it. (Rating: 5)</p><p class="review-date">Date: 2026-07-18</p></div></div><h3 class="submit-review-heading">Submit a Review</h3><form class="review-form"><p><label>Rating:</label></p><div class="rating-options"><label><input type="radio" name="rating" value="1"> 1</label><label><input type="radio" name="rating" value="2"> 2</label><label><input type="radio" name="rating" value="3"> 3</label><label><input type="radio" name="rating" value="4"> 4</label><label><input type="radio" name="rating" value="5" checked> 5</label></div><p><label for="review-comment">Comment:</label><textarea id="review-comment" name="comment"></textarea></p><button type="submit" class="btn btn-primary">Submit Review</button></form><p class="review-status"></p><a href="books.html" class="link-style">Back to Book List</a></div></main>
+<footer><div class="container"><nav><ul>
+  <li><a href="add-book.html">Add Book</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+</ul></nav>
+<p id="le-footer">&copy; 2026 Book Tracker Demo Version | by <a href="../" class="footer-a">Anthony Em | 安思辰</a></p>
+</div></footer><script src="data.js"></script><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><script src="main.js"></script></body></html>

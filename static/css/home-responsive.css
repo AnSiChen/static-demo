@@ -1,0 +1,207 @@
+/* ============================================
+   HOME RESPONSIVE
+   ============================================ */
+
+/* ---- Hero ---- */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100vh;
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-container {
+        width: 100%;
+        padding: 0 clamp(1rem, 4vw, 2rem);
+        box-sizing: border-box;  
+        justify-content: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .hero-heading {
+        font-size: clamp(2.2rem, 9vw, 4rem);
+        line-height: 1.1;
+    }
+
+    .hero-description {
+        max-width: 38rem;
+        margin: 0 auto;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        padding: 0.75rem 1.5rem !important;
+        font-size: 1rem !important;
+        box-sizing: border-box;
+        text-align: center;
+        justify-content: center;
+        border-radius: 50px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 1rem !important;
+        padding: 0.75rem 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-line {
+        font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
+        white-space: normal !important; 
+        text-align: center;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .intro-line {
+        font-size: clamp(2.5rem, 5vw, 4rem) !important;
+        white-space: nowrap;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-heading-text {
+        font-size: clamp(1.8rem, 7vw, 2.8rem) !important;
+        line-height: 1.2 !important;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-heading-text {
+        font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .page-container {
+        width: 100%;
+        padding: 0 1.25rem; 
+        box-sizing: border-box;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden; 
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0.75rem;
+    }
+
+    .project-content {
+        padding: 1rem 0;
+        box-sizing: border-box;
+    }
+
+    .project-tech {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+/* ---- Featured Reading (Home) ---- */
+@media (max-width: 768px) {
+    .featured-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .featured-card {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .featured-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 0.75rem 0.75rem 0 0;
+    }
+
+    .featured-content {
+        padding: 1.25rem;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .intro-overlay {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* ---- Standardize margins ---- */
+@media (max-width: 768px) {
+    .page-container,
+    .hero-container {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 769px) {
+    .page-container,
+    .hero-container {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+        box-sizing: border-box;
+    }
+}

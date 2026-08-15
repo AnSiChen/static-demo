@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Static UI representation of the Book Tracker Django application.">
+<title>Book Tracker Demo Version</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+</head><body>
+<header>
+  <div class="logo-container"><a href="home.html"><img src="assets/logo.png" alt="Book Tracker Logo" class="logo"></a></div>
+  <nav class="container"><ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="index.html" id="logout-link">Logout</a></li>
+    <li class="user-info"><a href="edit-profile.html"><strong>@bug</strong></a></li>
+  </ul></nav>
+  <div class="container search-container">
+    <form class="global-search-form" action="search.html">
+      <label for="book-search" class="hidden">Search books</label>
+      <input type="text" id="book-search" name="q" placeholder="Search books...">
+      <button type="button" onclick="location.href='explore.html'" class="button-highlight">Explore</button>
+    </form>
+    <div id="search-results"></div>
+  </div>
+</header><main><div class="home-container"><section class="hero"><h1 class="home-heading">Welcome to Book Tracker Demo Version</h1><p class="welcome-back">Welcome, bug! Continue your reading journey.</p><a href="dashboard.html" class="btn btn-primary btn-hero">Go to Dashboard</a></section>
+<section class="reading-challenge"><h2>Reading Challenge</h2><p>Join our reading challenge and set your reading goals for the year!</p><div class="challenge-details"><p>Current Progress: <span id="reading-progress">3</span> out of <span id="reading-goal">12</span> books</p><form id="reading-challenge-form"><input type="number" class="custom-number-input" name="new_goal" value="12"><button type="submit" class="btn btn-danger">Set Your Challenge</button></form><div id="congratulations-message" class="congratulations" style="display:none">Congratulations on completing your challenge!</div></div></section>
+<section class="book-display"><h2>Discover New Reads</h2><div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide"><a href="book.html?id=1"><img src="assets/book-1.jpg" alt="1984"></a><h3>1984</h3><p>George Orwell</p></div><div class="swiper-slide"><a href="book.html?id=2"><img src="assets/book-2.jpg" alt="Pride and Prejudice"></a><h3>Pride and Prejudice</h3><p>Jane Austen</p></div><div class="swiper-slide"><a href="book.html?id=3"><img src="assets/book-3.jpg" alt="The Hobbit"></a><h3>The Hobbit</h3><p>J. R. R. Tolkien</p></div><div class="swiper-slide"><a href="book.html?id=4"><img src="assets/book-4.jpg" alt="The Great Gatsby"></a><h3>The Great Gatsby</h3><p>F. Scott Fitzgerald</p></div><div class="swiper-slide"><a href="book.html?id=5"><img src="assets/book-5.jpg" alt="Sapiens"></a><h3>Sapiens</h3><p>Yuval Noah Harari</p></div><div class="swiper-slide"><a href="book.html?id=6"><img src="assets/book-6.jpg" alt="The Left Hand of Darkness"></a><h3>The Left Hand of Darkness</h3><p>Ursula K. Le Guin</p></div></div><div class="swiper-pagination"></div></div></section></div></main>
+<footer><div class="container"><nav><ul>
+  <li><a href="add-book.html">Add Book</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+</ul></nav>
+<p id="le-footer">&copy; 2026 Book Tracker Demo Version | by <a href="../" class="footer-a">Anthony Em | 安思辰</a></p>
+</div></footer><script src="data.js"></script><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><script src="main.js"></script></body></html>
