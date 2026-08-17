@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     //
-    // em
+    // Contact
     //
 
-    const user = "contact";
-    const domain = "anthonyem.com";
+    const user = "anthony";
+    const domain = "3sc.me";
     const email = `${user}@${domain}`;
     const navToggle = document.querySelector(".nav-toggle");
     const nav = document.querySelector(".base-nav");

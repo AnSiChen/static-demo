@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://anthonyem.com/sitemap.xml
+Sitemap: https://anthony.3sc.me/sitemap.xml
