@@ -1,6 +1,6 @@
 // Static Reading shelf.
 // External entries below are a frozen seed from the final live RSS-powered site.
-// Replace them with your own favourites whenever you like.
+// Replace them with your own favourites whenever you like if reusing this. Featured will display in reading page and at the end of index.
 // New Anthony Em article: add its HTML folder, then add a new INTERNAL object at the TOP.
 
 window.READING_ITEMS = [
