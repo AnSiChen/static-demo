@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
+  <atom:link href="https://anthony.3sc.me/rss.xml" rel="self" type="application/rss+xml" />
   <title>Anthony Em</title>
   <link>https://anthony.3sc.me/</link>
   <description>Writing by Anthony Em.</description>
   <language>en</language>
+  <lastBuildDate>Tue, 18 Aug 2026 12:20:00 +0930</lastBuildDate>
   <item>
     <title>Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version</title>
     <link>https://anthony.3sc.me/reading/crane-atlas-retrospective/</link>

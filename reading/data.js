@@ -12,7 +12,7 @@ window.READING_ITEMS = [
     "source": "Anthony Em",
     "internal": true,
     "path": "reading/crane-atlas-retrospective/",
-    "image": "static/images/articles/crane-atlas.png",
+    "image": "static/images/articles/crane-atlas.webp",
     "featured": true
   },
   {
@@ -23,7 +23,7 @@ window.READING_ITEMS = [
     "source": "Anthony Em",
     "internal": true,
     "path": "reading/homelabs-devops/",
-    "image": "static/images/articles/htop.png",
+    "image": "static/images/articles/htop.webp",
     "featured": true
   },
   {

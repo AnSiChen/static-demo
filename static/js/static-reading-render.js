@@ -19,7 +19,7 @@
         const image = imageFor(item);
         return `
         <article class="featured-card">
-            ${image ? `<img src="${image}" alt="${item.title}" class="featured-image">` : ""}
+            ${image ? `<img src="${image}" alt="${item.title}" class="featured-image" loading="lazy" decoding="async">` : ""}
             <div class="featured-content">
                 <p class="featured-source">${item.source}</p>
                 <h3 class="featured-title"><a href="${hrefFor(item)}"${externalAttrs(item)}>${item.title}</a></h3>
@@ -33,7 +33,7 @@
         const image = imageFor(item);
         return `
         <article class="reading-card">
-            ${image ? `<img src="${image}" alt="${item.title}" class="reading-image">` : ""}
+            ${image ? `<img src="${image}" alt="${item.title}" class="reading-image" loading="lazy" decoding="async">` : ""}
             <div class="reading-content">
                 <p class="reading-source">${item.source}</p>
                 <h3 class="reading-title"><a href="${hrefFor(item)}"${externalAttrs(item)}>${item.title}</a></h3>

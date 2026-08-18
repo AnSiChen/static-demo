@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading</title>
-    <meta name="description" content="Essays, tutorials and thoughts on software development, technology, science and life.">
+    <title>Reading — Writing & Curated Articles | Anthony Em</title>
+    <meta name="description" content="Writing by Anthony Em on software engineering, infrastructure and project retrospectives, alongside a small permanent shelf of selected articles and ideas.">
     <meta name="author" content="Anthony Em">
-    <link rel="apple-touch-icon" sizes="180x180" href="../static/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon/favicon-16x16.png">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/static/images/favicon/site.webmanifest">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../rss.xml">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/66565d92a7.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66565d92a7.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/responsive.css">
     <link rel="stylesheet" href="../static/css/reading.css">
 <link rel="stylesheet" href="../static/css/reading-responsive.css">
+
+    <link rel="canonical" href="https://anthony.3sc.me/reading/">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Anthony Em">
+    <meta property="og:title" content="Reading — Writing & Curated Articles | Anthony Em">
+    <meta property="og:description" content="Writing on software engineering and infrastructure, plus a permanent shelf of selected reads.">
+    <meta property="og:url" content="https://anthony.3sc.me/reading/">
+    <meta property="og:image" content="https://anthony.3sc.me/static/images/del_hero_reading.png">
+    <meta property="og:image:alt" content="Reading landscape artwork">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reading — Writing & Curated Articles | Anthony Em">
+    <meta name="twitter:description" content="Original writing and a permanent shelf of selected reads.">
+    <meta name="twitter:image" content="https://anthony.3sc.me/static/images/del_hero_reading.png">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://anthony.3sc.me/reading/#page","url":"https://anthony.3sc.me/reading/","name":"Reading — Writing & Curated Articles | Anthony Em","description":"Writing by Anthony Em alongside a permanent shelf of selected articles and ideas.","isPartOf":{"@id":"https://anthony.3sc.me/#website"},"about":{"@id":"https://anthony.3sc.me/#person"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://anthony.3sc.me/"},{"@type":"ListItem","position":2,"name":"Reading","item":"https://anthony.3sc.me/reading/"}]}]}</script>
+    <link rel="preload" as="image" href="/static/images/del_hero.webp" fetchpriority="high">
 </head>
 <body data-site-root="../">
 <header class="base-header">
@@ -25,15 +45,15 @@
         <a href="../">Home</a>
         <a href="../reading/">Reading</a>
         <a href="../rss.xml" title="RSS Feed"><i class="fa-solid fa-rss"></i></a>
-        <button id="ambient-toggle" class="nav-icon-btn" aria-label="Toggle ambient sound">🍃</button>
     </nav>
 </header>
 <main>
+<h1 class="sr-only">Reading by Anthony Em</h1>
 <div class="main">
     <section class="hero">
         <div class="hero-background"></div>
         <section class="featured-reading content-width">
-            <div class="section-container"><div id="featured-grid" class="featured-grid"></div></div>
+            <div class="section-container"><div id="featured-grid" class="featured-grid"><article class="featured-card"><img src="../static/images/articles/crane-atlas.webp" alt="Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version" class="featured-image" loading="lazy" decoding="async"><div class="featured-content"><p class="featured-source">Anthony Em</p><h3 class="featured-title"><a href="../reading/crane-atlas-retrospective/">Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version</a></h3><p class="featured-summary">A retrospective on building Crane Atlas from a private learning-journal idea into a full Flask application, and why the hosted version was ultimately retired while the core concept survived.</p><a href="../reading/crane-atlas-retrospective/" class="featured-link">Read →</a></div></article><article class="featured-card"><img src="../static/images/articles/htop.webp" alt="Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu" class="featured-image" loading="lazy" decoding="async"><div class="featured-content"><p class="featured-source">Anthony Em</p><h3 class="featured-title"><a href="../reading/homelabs-devops/">Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu</a></h3><p class="featured-summary">A self-hosted deployment platform for hosting and maintaining multiple containerized applications on a Linux VPS using Docker, Docker Compose, GitHub Actions, SSH, and a reverse proxy with automated HTTPS.</p><a href="../reading/homelabs-devops/" class="featured-link">Read →</a></div></article><article class="featured-card"><img src="../static/images/articles/graduate-student-proves-a-quantum-uncertainty-principle-of-fractals-article.jpg" alt="Graduate Student Proves a Quantum Uncertainty Principle for Fractals" class="featured-image" loading="lazy" decoding="async"><div class="featured-content"><p class="featured-source">Science • Quanta</p><h3 class="featured-title"><a href="https://www.quantamagazine.org/graduate-student-proves-the-fractal-uncertainty-principle-20260812/" target="_blank" rel="noopener noreferrer">Graduate Student Proves a Quantum Uncertainty Principle for Fractals</a></h3><p class="featured-summary">A mathematical result connecting fractal structure, chaos, and quantum ideas through a new uncertainty principle.</p><a href="https://www.quantamagazine.org/graduate-student-proves-the-fractal-uncertainty-principle-20260812/" class="featured-link" target="_blank" rel="noopener noreferrer">Read →</a></div></article></div></div>
         </section>
         <div class="content-width">
             <div class="rss-card">
@@ -52,7 +72,7 @@
         <section class="latest-reading">
             <h2 class="section-title">The Rabbit Hole</h2>
             <p class="section-description">Original pieces and a permanent shelf of curious reads.</p>
-            <div class="section-container"><div id="latest-grid" class="latest-grid"></div></div>
+            <div class="section-container"><div id="latest-grid" class="latest-grid"><article class="reading-card"><img src="../static/images/articles/crane-atlas.webp" alt="Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version" class="reading-image" loading="lazy" decoding="async"><div class="reading-content"><p class="reading-source">Anthony Em</p><h3 class="reading-title"><a href="../reading/crane-atlas-retrospective/">Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version</a></h3><p class="reading-meta">Anthony Em · 15 August 2026</p><p class="reading-summary">A retrospective on building Crane Atlas from a private learning-journal idea into a full Flask application, and why the hosted version was ultimately retired while the core concept survived.</p><a href="../reading/crane-atlas-retrospective/" class="reading-link">Read →</a></div></article><article class="reading-card"><img src="../static/images/articles/htop.webp" alt="Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu" class="reading-image" loading="lazy" decoding="async"><div class="reading-content"><p class="reading-source">Anthony Em</p><h3 class="reading-title"><a href="../reading/homelabs-devops/">Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu</a></h3><p class="reading-meta">Anthony Em · 16 May 2025</p><p class="reading-summary">A self-hosted deployment platform for hosting and maintaining multiple containerized applications on a Linux VPS using Docker, Docker Compose, GitHub Actions, SSH, and a reverse proxy with automated HTTPS.</p><a href="../reading/homelabs-devops/" class="reading-link">Read →</a></div></article><article class="reading-card"><img src="../static/images/articles/where-the-earth-meets-the-sky-article.jpg" alt="Where the earth meets the sky" class="reading-image" loading="lazy" decoding="async"><div class="reading-content"><p class="reading-source">Ideas • Aeon</p><h3 class="reading-title"><a href="https://aeon.co/videos/in-the-remote-desert-an-awe-inspiring-artwork-collapses-time-and-space" target="_blank" rel="noopener noreferrer">Where the earth meets the sky</a></h3><p class="reading-meta">Aeon Video · 13 August 2026</p><p class="reading-summary">A visual journey through a remote land-art observatory designed to collapse ordinary ideas of time, scale, and place.</p><a href="https://aeon.co/videos/in-the-remote-desert-an-awe-inspiring-artwork-collapses-time-and-space" class="reading-link" target="_blank" rel="noopener noreferrer">Read →</a></div></article><article class="reading-card"><img src="../static/images/articles/graduate-student-proves-a-quantum-uncertainty-principle-of-fractals-article.jpg" alt="Graduate Student Proves a Quantum Uncertainty Principle for Fractals" class="reading-image" loading="lazy" decoding="async"><div class="reading-content"><p class="reading-source">Science • Quanta</p><h3 class="reading-title"><a href="https://www.quantamagazine.org/graduate-student-proves-the-fractal-uncertainty-principle-20260812/" target="_blank" rel="noopener noreferrer">Graduate Student Proves a Quantum Uncertainty Principle for Fractals</a></h3><p class="reading-meta">Shalma Wegsman · 12 August 2026</p><p class="reading-summary">A mathematical result connecting fractal structure, chaos, and quantum ideas through a new uncertainty principle.</p><a href="https://www.quantamagazine.org/graduate-student-proves-the-fractal-uncertainty-principle-20260812/" class="reading-link" target="_blank" rel="noopener noreferrer">Read →</a></div></article><article class="reading-card"><img src="../static/images/articles/why-are-rivers-so-mathematical-article.jpg" alt="Why Are Rivers So Mathematical?" class="reading-image" loading="lazy" decoding="async"><div class="reading-content"><p class="reading-source">Science • Quanta</p><h3 class="reading-title"><a href="https://www.quantamagazine.org/why-are-rivers-so-mathematical-20260810/" target="_blank" rel="noopener noreferrer">Why Are Rivers So Mathematical?</a></h3><p class="reading-meta">Natalie Wolchover · 10 August 2026</p><p class="reading-summary">An exploration of the scaling laws that bring surprising mathematical order to flowing water, rock, and sediment.</p><a href="https://www.quantamagazine.org/why-are-rivers-so-mathematical-20260810/" class="reading-link" target="_blank" rel="noopener noreferrer">Read →</a></div></article><article class="reading-card"><img src="../static/images/articles/neutrinos-from-deep-inside-earth-article.jpg" alt="Neutrinos From Deep Inside Earth Provide a New Picture of the Mantle" class="reading-image" loading="lazy" decoding="async"><div class="reading-content"><p class="reading-source">Physics • Quanta Magazine</p><h3 class="reading-title"><a href="https://www.quantamagazine.org/neutrinos-from-deep-inside-earth-provide-a-new-picture-of-the-mantle-20260807/" target="_blank" rel="noopener noreferrer">Neutrinos From Deep Inside Earth Provide a New Picture of the Mantle</a></h3><p class="reading-meta">James Dinneen · 7 August 2026</p><p class="reading-summary">A global constellation of neutrino detectors is creating a never-before-seen view of the radioactive elements that power Earth’s tectonic heat engine.</p><a href="https://www.quantamagazine.org/neutrinos-from-deep-inside-earth-provide-a-new-picture-of-the-mantle-20260807/" class="reading-link" target="_blank" rel="noopener noreferrer">Read →</a></div></article><article class="reading-card"><img src="../static/images/articles/physicists-solve-a-muon-mystery-now-old-results-dont-add-up-article.jpg" alt="Physicists Solve a Big Quantum Mystery. Now, Old Results Don’t Add Up." class="reading-image" loading="lazy" decoding="async"><div class="reading-content"><p class="reading-source">Physics • Quanta Magazine</p><h3 class="reading-title"><a href="https://www.quantamagazine.org/physicists-solve-a-muon-mystery-now-old-results-dont-add-up-20260729/" target="_blank" rel="noopener noreferrer">Physicists Solve a Big Quantum Mystery. Now, Old Results Don’t Add Up.</a></h3><p class="reading-meta">Matt von Hippel · 29 July 2026</p><p class="reading-summary">New calculations seem to have put a 25-year-old particle physics puzzle to rest. But they’ve also created a clash with other experimental results.</p><a href="https://www.quantamagazine.org/physicists-solve-a-muon-mystery-now-old-results-dont-add-up-20260729/" class="reading-link" target="_blank" rel="noopener noreferrer">Read →</a></div></article><article class="reading-card"><img src="../static/images/articles/how-fast-is-the-universe-really-expanding-article.jpg" alt="How Fast Is the Universe Really Expanding?" class="reading-image" loading="lazy" decoding="async"><div class="reading-content"><p class="reading-source">Physics • Quanta Magazine</p><h3 class="reading-title"><a href="https://www.quantamagazine.org/how-fast-is-the-universe-really-expanding-20260723/" target="_blank" rel="noopener noreferrer">How Fast Is the Universe Really Expanding?</a></h3><p class="reading-meta">Steven Strogatz and Janna Levin · 23 July 2026</p><p class="reading-summary">One of the most contested issues in cosmology is our understanding of the Universe’s expansion. Adam Riess discusses why there is disagreement and what might resolve it.</p><a href="https://www.quantamagazine.org/how-fast-is-the-universe-really-expanding-20260723/" class="reading-link" target="_blank" rel="noopener noreferrer">Read →</a></div></article></div></div>
         </section>
     </section>
 </div>
@@ -69,14 +89,12 @@
 <div class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-sort-up"></i></div>
 <script src="../static/js/main.js"></script>
 <script src="../static/js/theme.js"></script>
-<script>const AMBIENT_AUDIO = "../static/audio/forest-wind.mp3";</script>
-<script src="../static/js/hero-audio.js"></script>
 <script src="data.js"></script>
 <script src="../static/js/static-reading-render.js"></script>
 <script>
 const heroImages = [
     "../static/images/articles/crane-atlas-retirement.png",
-    "../static/images/articles/htop.png",
+    "../static/images/articles/htop.webp",
     "../static/images/del_hero_reading.png"
 ];
 </script>

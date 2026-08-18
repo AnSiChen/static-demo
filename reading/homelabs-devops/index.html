@@ -6,16 +6,36 @@
     <title>Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu</title>
     <meta name="description" content="A self-hosted deployment platform for hosting and maintaining multiple containerized applications on a Linux VPS using Docker, Docker Compose, GitHub Actions, SSH, and a reverse proxy with automated HTTPS.">
     <meta name="author" content="Anthony Em">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../static/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../static/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../static/images/favicon/favicon-16x16.png">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/static/images/favicon/site.webmanifest">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../rss.xml">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/66565d92a7.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66565d92a7.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="../../static/css/base.css">
     <link rel="stylesheet" href="../../static/css/responsive.css">
     <link rel="stylesheet" href="../../static/css/article.css">
 <link rel="stylesheet" href="../../static/css/article-responsive.css">
+
+    <link rel="canonical" href="https://anthony.3sc.me/reading/homelabs-devops/">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Anthony Em">
+    <meta property="og:title" content="Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu">
+    <meta property="og:description" content="A self-hosted deployment platform for hosting and maintaining multiple containerized applications on a Linux VPS using Docker, Docker Compose, GitHub Actions, SSH, and a reverse proxy with automated HTTPS.">
+    <meta property="og:url" content="https://anthony.3sc.me/reading/homelabs-devops/">
+    <meta property="og:image" content="https://anthony.3sc.me/static/images/articles/htop.webp">
+    <meta property="article:published_time" content="2025-05-16T00:00:00+09:30">
+    <meta property="article:author" content="Anthony Em">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu">
+    <meta name="twitter:description" content="A self-hosted deployment platform for hosting and maintaining multiple containerized applications on a Linux VPS using Docker, Docker Compose, GitHub Actions, SSH, and a reverse proxy with automated HTTPS.">
+    <meta name="twitter:image" content="https://anthony.3sc.me/static/images/articles/htop.webp">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://anthony.3sc.me/reading/homelabs-devops/#article","mainEntityOfPage":"https://anthony.3sc.me/reading/homelabs-devops/","headline":"Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu","description":"A self-hosted deployment platform for hosting and maintaining multiple containerized applications on a Linux VPS using Docker, Docker Compose, GitHub Actions, SSH, and a reverse proxy with automated HTTPS.","image":["https://anthony.3sc.me/static/images/articles/htop.webp"],"datePublished":"2025-05-16T00:00:00+09:30","dateModified":"2025-05-16T00:00:00+09:30","author":{"@id":"https://anthony.3sc.me/#person"},"isPartOf":{"@id":"https://anthony.3sc.me/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://anthony.3sc.me/"},{"@type":"ListItem","position":2,"name":"Reading","item":"https://anthony.3sc.me/reading/"},{"@type":"ListItem","position":3,"name":"Self-hosted deployment platform","item":"https://anthony.3sc.me/reading/homelabs-devops/"}]}]}</script>
 </head>
 <body data-site-root="../../">
 <header class="base-header">
@@ -25,7 +45,6 @@
         <a href="../../">Home</a>
         <a href="../../reading/">Reading</a>
         <a href="../../rss.xml" title="RSS Feed"><i class="fa-solid fa-rss"></i></a>
-        <button id="ambient-toggle" class="nav-icon-btn" aria-label="Toggle ambient sound">🍃</button>
     </nav>
 </header>
 <main>
@@ -34,7 +53,7 @@
         <div class="hero"></div>
         <header class="article-header">
             <h1>Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu</h1>
-            <img src="../../static/images/articles/htop.png" alt="Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu" class="featured-image">
+            <img src="../../static/images/articles/htop.webp" alt="Building a Self-Hosted Deployment Platform with Docker, GitHub Actions, and Ubuntu" class="featured-image" fetchpriority="high" decoding="async">
             <div class="article-meta"><span>Anthony Em</span><span>16 May 2025</span></div>
         </header>
         <div class="article-body"><p>Over time, my portfolio has grown longer. Unsurprisingly, so has the number of applications I need to deploy and maintain. At first, it was manageable, but soon, I found myself repeating the same tedious tasks across multiple repositories, copying files from one project to another, and trying to remember which &quot;unique&quot; approach I used for the last one. Long story short: maintaining a growing collection of personal projects with a different, home-brewed process for each one became an unsustainable mess. I told myself there had to be a more efficient way, and it turns out there is.</p>
@@ -50,7 +69,7 @@
 <p>I still come back to these five principles whenever I feel unsure about adding new things.</p>
 <p>After this, choosing the technology became much easier once I knew what I wanted the platform to do.</p>
 <div class="article-image">
-    <img src="../../static/images/articles/vps-provider-dashboard.png" alt="VPS Provider Dashboard">
+    <img src="../../static/images/articles/vps-provider-dashboard.png" alt="VPS Provider Dashboard" loading="lazy" decoding="async">
    <p class="image-caption">VPS Provider Dashboard</p>
 </div>
 
@@ -59,7 +78,7 @@
 <p><strong>Why Docker Compose?</strong> Each application has its services, networks, and persistent storage using a single Compose configuration.</p>
 <p>I originally exposed containers directly with different ports. It wasn't difficult, but it became annoying to remember which application lived on which port, at one point I was keeping a NotePad project just for ports, because it seemed easier than going online or in-file just to check. That's what pushed me toward Nginx Proxy Manager.</p>
 <div class="article-image">
-    <img src="../../static/images/articles/nginx-proxy-manager.png" alt="NGINX Proxy Manager">
+    <img src="../../static/images/articles/nginx-proxy-manager.png" alt="NGINX Proxy Manager" loading="lazy" decoding="async">
    <p class="image-caption">NGINX Proxy Manager</p>
 </div>
 
@@ -84,7 +103,7 @@
 <p><strong>Building for Growth:</strong> Because every project follows the same networking pattern, adding another application involves connecting it to the shared Docker network, configuring a reverse proxy entry, and updating the relevant DNS records.</p>
 <p>I automated the parts I found myself repeating instead of building an entire CI/CD pipeline just because everyone says you should.</p>
 <div class="article-image">
-    <img src="../../static/images/articles/deployment-flow.png" alt="Deployment Workflow Diagram">
+    <img src="../../static/images/articles/deployment-flow.png" alt="Deployment Workflow Diagram" loading="lazy" decoding="async">
    <p class="image-caption">Deployment Workflow Diagram</p>
 </div>
 
@@ -103,7 +122,7 @@ docker compose exec -T library_demo_web python manage.py migrate
 docker compose exec -T library_demo_web python manage.py collectstatic --noinput
 </code></pre>
 <div class="article-image">
-    <img src="../../static/images/articles/github-actions.png" alt="GitHub Actions">
+    <img src="../../static/images/articles/github-actions.png" alt="GitHub Actions" loading="lazy" decoding="async">
    <p class="image-caption">Github Actions Example</p>
 </div>
 
@@ -117,7 +136,7 @@ docker compose exec -T library_demo_web python manage.py collectstatic --noinput
 <p>When it comes to the day-to-day operations of the server, I have a fairly simple routine, for example:</p>
 <p><strong>Monitoring the Server:</strong> Although the platform doesn't yet include a centralized monitoring stack, routine administration is performed directly from the Linux server using standard system tools. Utilities such as <code>htop</code> provide a quick overview of CPU utilization, memory consumption, running processes, and overall system health.</p>
 <div class="article-image">
-    <img src="../../static/images/articles/htop.png" alt="HTOP">
+    <img src="../../static/images/articles/htop.webp" alt="HTOP" loading="lazy" decoding="async">
    <p class="image-caption">HTOP Utility</p>
 </div>
 
@@ -146,7 +165,7 @@ docker compose exec -T library_demo_web python manage.py collectstatic --noinput
         <a href="../" class="back-link">← Back to Reading</a>
     </article>
     <section class="continue-reading"><h2>Continue Reading</h2><div class="article-grid"><a href="../crane-atlas-retrospective/" class="more-card">
-            <img src="../../static/images/articles/crane-atlas.png" alt="Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version">
+            <img src="../../static/images/articles/crane-atlas.webp" alt="Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version" loading="lazy" decoding="async">
             <h3>Crane Atlas: What I Built, What I Kept, and Why I Retired the Hosted Version</h3>
             <p>A retrospective on building Crane Atlas from a private learning-journal idea into a full Flask application, and why the hosted version was ultimately retired while the core concept survived.</p>
         </a></div></section>
@@ -164,6 +183,4 @@ docker compose exec -T library_demo_web python manage.py collectstatic --noinput
 <div class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-sort-up"></i></div>
 <script src="../../static/js/main.js"></script>
 <script src="../../static/js/theme.js"></script>
-<script>const AMBIENT_AUDIO = "../../static/audio/forest-wind.mp3";</script>
-<script src="../../static/js/hero-audio.js"></script>
 </body></html>
